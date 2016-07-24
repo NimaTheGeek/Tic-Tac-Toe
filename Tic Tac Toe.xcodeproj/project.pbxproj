@@ -14,6 +14,9 @@
 		9BC904431D453C790094472F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC904411D453C790094472F /* LaunchScreen.storyboard */; };
 		9BC9044E1D453C790094472F /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC9044D1D453C790094472F /* Tic_Tac_ToeTests.swift */; };
 		9BC904591D453C790094472F /* Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC904581D453C790094472F /* Tic_Tac_ToeUITests.swift */; };
+		9BC904671D453F550094472F /* board.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC904661D453F550094472F /* board.jpg */; };
+		9BC904761D454C8D0094472F /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC904741D454C8D0094472F /* O.png */; };
+		9BC904771D454C8D0094472F /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC904751D454C8D0094472F /* X.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		9BC904541D453C790094472F /* Tic Tac ToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac ToeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC904581D453C790094472F /* Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
 		9BC9045A1D453C790094472F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC904661D453F550094472F /* board.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = board.jpg; sourceTree = "<group>"; };
+		9BC904741D454C8D0094472F /* O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = O.png; sourceTree = "<group>"; };
+		9BC904751D454C8D0094472F /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 		9BC9042C1D453C780094472F = {
 			isa = PBXGroup;
 			children = (
+				9BC904741D454C8D0094472F /* O.png */,
+				9BC904751D454C8D0094472F /* X.png */,
 				9BC904371D453C780094472F /* Tic Tac Toe */,
 				9BC9044C1D453C790094472F /* Tic Tac ToeTests */,
 				9BC904571D453C790094472F /* Tic Tac ToeUITests */,
@@ -100,6 +108,7 @@
 				9BC904381D453C790094472F /* AppDelegate.swift */,
 				9BC9043A1D453C790094472F /* ViewController.swift */,
 				9BC9043C1D453C790094472F /* Main.storyboard */,
+				9BC904661D453F550094472F /* board.jpg */,
 				9BC9043F1D453C790094472F /* Assets.xcassets */,
 				9BC904411D453C790094472F /* LaunchScreen.storyboard */,
 				9BC904441D453C790094472F /* Info.plist */,
@@ -229,9 +238,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC904671D453F550094472F /* board.jpg in Resources */,
 				9BC904431D453C790094472F /* LaunchScreen.storyboard in Resources */,
 				9BC904401D453C790094472F /* Assets.xcassets in Resources */,
 				9BC9043E1D453C790094472F /* Main.storyboard in Resources */,
+				9BC904761D454C8D0094472F /* O.png in Resources */,
+				9BC904771D454C8D0094472F /* X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
