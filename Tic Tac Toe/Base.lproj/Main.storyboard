@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" tag="10" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-3R-nZ3">
+                            <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-3R-nZ3">
                                 <rect key="frame" x="0.0" y="179" width="375" height="310"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="63l-DZ-nj9"/>
@@ -92,22 +92,34 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1d-6g-Nei"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Tic Tac Toe" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jj9-Hd-uha">
-                                <rect key="frame" x="106" y="20" width="163" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="VdN-aZ-QIT"/>
-                                    <constraint firstAttribute="width" constant="163" id="xl8-U2-yrL"/>
-                                </constraints>
-                                <color key="textColor" red="0.47843137254901963" green="0.75686274509803919" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="31"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s7y-j0-I9J">
-                                <rect key="frame" x="67" y="525" width="240" height="35"/>
-                                <color key="textColor" red="0.52941176470588236" green="0.56470588235294117" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-Dt-5nR">
+                                <rect key="frame" x="124" y="595" width="126" height="30"/>
+                                <color key="backgroundColor" red="0.67843137254901964" green="0.71764705882352942" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
+                                <state key="normal" title="Try Again!">
+                                    <color key="titleColor" red="0.34397805620139221" green="0.44366246757708566" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXe-Hy-TAB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uG-Oo-BI6">
+                                <rect key="frame" x="110" y="28" width="155" height="49"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="31"/>
+                                <color key="textColor" red="0.47450980392156861" green="0.75686274509803919" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnl-Qu-NUt">
+                                <rect key="frame" x="20" y="515" width="335" height="53"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <color key="textColor" red="0.67843137249999996" green="0.71764705880000002" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1803921568627451" green="0.35686274509803922" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -125,15 +137,12 @@
                             <constraint firstItem="K6x-D5-aBB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="173" id="NSM-jY-F4x"/>
                             <constraint firstItem="Br0-xI-hRH" firstAttribute="leading" secondItem="0CJ-CD-u1H" secondAttribute="leading" id="PUv-po-WBr"/>
                             <constraint firstItem="0CJ-CD-u1H" firstAttribute="top" secondItem="Br0-xI-hRH" secondAttribute="bottom" constant="22" id="Ptb-fy-EpQ"/>
-                            <constraint firstItem="jj9-Hd-uha" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RVL-oj-knv"/>
                             <constraint firstItem="K6x-D5-aBB" firstAttribute="top" secondItem="H4B-Tl-TtE" secondAttribute="top" id="RhY-k7-9Fu"/>
                             <constraint firstItem="K6x-D5-aBB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="VYi-Kc-xBz"/>
                             <constraint firstItem="LA3-zM-xpi" firstAttribute="top" secondItem="JAY-Ss-pnz" secondAttribute="top" id="VZS-Jk-XCB"/>
                             <constraint firstItem="Br0-xI-hRH" firstAttribute="trailing" secondItem="0CJ-CD-u1H" secondAttribute="trailing" id="Vuc-dC-3lZ"/>
                             <constraint firstItem="H4B-Tl-TtE" firstAttribute="centerX" secondItem="4zR-3R-nZ3" secondAttribute="centerX" id="Zs8-5H-RCh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jj9-Hd-uha" secondAttribute="trailing" constant="86" id="bsE-fn-fZn"/>
                             <constraint firstItem="4zR-3R-nZ3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="crI-0h-BgT"/>
-                            <constraint firstItem="jj9-Hd-uha" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="86" id="dOg-iZ-AlH"/>
                             <constraint firstItem="4zR-3R-nZ3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dVd-ep-KV2"/>
                             <constraint firstItem="0CJ-CD-u1H" firstAttribute="bottom" secondItem="LA3-zM-xpi" secondAttribute="bottom" id="gHh-xy-zNn"/>
                             <constraint firstItem="Br0-xI-hRH" firstAttribute="top" secondItem="K6x-D5-aBB" secondAttribute="bottom" constant="21" id="guF-PC-YSb"/>
@@ -165,7 +174,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="button" destination="K6x-D5-aBB" id="26I-xW-7Dx"/>
-                        <outlet property="winner" destination="s7y-j0-I9J" id="TpI-7r-tvy"/>
+                        <outlet property="winner" destination="Wnl-Qu-NUt" id="C0C-hV-RjG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
